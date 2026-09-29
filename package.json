@@ -1,0 +1,13 @@
+{
+  "name": "servtec-cms",
+  "version": "1.0.0",
+  "description": "Sitio administrable de Serv&Tec (CMS sin dependencias externas)",
+  "private": true,
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node --no-warnings backend/server.js",
+    "dev": "node --no-warnings --watch backend/server.js",
+    "create-admin": "node --no-warnings backend/scripts/create-admin.js",
+    "test": "node --no-warnings backend/scripts/smoke-test.js"
+  }
+}
